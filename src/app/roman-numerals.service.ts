@@ -7,7 +7,7 @@ export class RomanNumeralsService {
   constructor() {}
 
   numeroRomano(numero): string {
-    if (numero > 1000) {
+    if (numero > 1000 || numero < 1) {
       return 'error';
     }
 

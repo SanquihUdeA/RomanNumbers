@@ -41,4 +41,8 @@ describe('RomanNumeralsService', () => {
   it(`Números mayores a 1000 no funcionan`, () => {
     expect(service.numeroRomano(1001)).toEqual('error');
   });
+
+  it(`Números menores a 1 no funcionan`, () => {
+    expect(service.numeroRomano(0)).toEqual('error');
+  });
 });
