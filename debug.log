@@ -1,0 +1,2 @@
+[1216/093555.272:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1216/110528.175:ERROR:crash_report_database_win.cc(606)] CreateDirectory C:\Users\sanqu\AppData\Local\Temp\karma-41081291\Crashpad: El sistema no puede encontrar la ruta especificada. (0x3)
