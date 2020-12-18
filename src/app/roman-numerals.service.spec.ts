@@ -42,7 +42,15 @@ describe('RomanNumeralsService', () => {
     expect(service.numeroRomano(1001)).toEqual('error');
   });
 
-  it(`Números menores a 1 no funcionan`, () => {
+  it(`El número 0 no funcionan`, () => {
     expect(service.numeroRomano(0)).toEqual('error');
+  });
+
+  it(`Números negativos no funcionan`, () => {
+    expect(service.numeroRomano(-1)).toEqual('error');
+  });
+
+  it(`Números decimales no funcionan`, () => {
+    expect(service.numeroRomano(-1.5)).toEqual('error');
   });
 });
